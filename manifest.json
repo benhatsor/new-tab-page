@@ -1,5 +1,8 @@
 {
   "name": "New tab page",
+  "icons": {
+    "48": "icon.png"
+  },
   "description": "A blank new tab page.",
   "version": "1",
   "incognito": "split",
