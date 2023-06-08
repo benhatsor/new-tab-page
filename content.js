@@ -1,7 +1,7 @@
 
 // add absolute URL to links
 
-const links = document.querySelector('link');
+const links = document.querySelectorAll('link');
 
 links.forEach(link => {
   
