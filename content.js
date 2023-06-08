@@ -5,7 +5,9 @@ const links = document.querySelectorAll('link');
 
 links.forEach(link => {
   
-  link.href = chrome.runtime.getURL(link.href);
+  const url = chrome.runtime.getURL(link.href);
+  
+  link.href = url;
   
 });
 
