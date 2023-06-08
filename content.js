@@ -3,9 +3,11 @@
 
 const links = document.querySelectorAll('link');
 
+const base = chrome.runtime.getURL('/'); 
+
 links.forEach(link => {
   
-  const url = chrome.runtime.getURL(link.href);
+  const url = link.href;
   
   link.href = url;
   
