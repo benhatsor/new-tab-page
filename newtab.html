@@ -12,14 +12,19 @@
     media="(prefers-color-scheme: dark)"
   />
 </head>
+<body>
 <script>
 
-// add extension base URL
+// add extension base URL to links
 
-const baseEl = document.createElement('base');
-baseEl.href = chrome.runtime.getURL('/');
+const links = document.querySelector('link');
 
-document.head.appendChild(baseEl);
+links.forEach(link => {
+  
+  link.href = chrome.runtime.getURL(link.href);
+  
+});
 
 </script>
+</body>
 </html>
