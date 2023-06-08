@@ -9,6 +9,10 @@
   "chrome_url_overrides": {
     "newtab": "newtab.html"
   },
+  "web_accessible_resources": [
+    "page-icon.svg",
+    "page-icon-dark.svg"
+  ],
   "manifest_version": 2,
   "author": "benhatsor",
   "homepage_url": "https://github.com/benhatsor/new-tab-page"
